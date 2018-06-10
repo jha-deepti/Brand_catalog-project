@@ -1,0 +1,142 @@
+
+body
+  {
+   font-family: sans-serif;
+    background-image:
+    url("https://upload.wikimedia.org/wikipedia/commons/2/21/Rob_wiki.JPG);
+
+    /* flex-basis: auto; */
+    /* background: fixed; */
+    /* backface-visibility: visible; */
+    /* background-size: auto; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    .category-item__form .form__label {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+ .container{
+     color:#4cff00;
+     font-size:large;
+ }
+    .user__nav {
+        font-size: x-large;
+        color: #cd329a;
+        position: relative;
+        left: 1200px;
+    }
+
+
+    .title__text{
+        font-size: xx-large;
+        color: #fffc00;
+       animation-duration: 25s;
+       animation-name:slidein;
+       animation-iteration-count:infinite;
+       animation-direction:alternate;
+
+    }
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 95%;
+        }
+    .items__item
+    {
+    margin-bottom: 0;
+    font-size: x-large;
+    color: #fffc00;
+    font-weight: 500;
+    text-align:center;
+    display:grid;
+
+}
+    @media screen and (min-width: 768px) {
+    . category-items column column-75{
+        display: inline-flex;
+        flex-wrap: wrap;
+        text-align:center;
+    }
+    }
+    .category-items column column-75{
+        text-align:right
+    }
+    .row{
+        text-align:center;
+        font-size:x-large;
+
+    }
+    .categories column column-25{
+        text-align:left;
+    }   
+    .category-item__description 
+    {
+        margin-left: 10%;
+        font-style: italic;
+        margin-right:20%;
+    }
+    .header__title2
+    {
+       
+        color:#FFDF00;
+        margin-left:45%;
+        font-size:xx-large;
+        text-transform:capitalize;
+    }
+    .category-item__controls .controls__edit,
+    .category-item__controls .controls__delete,
+    .category-item__controls .controls__back {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	margin-right: .2rem;
+}
+
+ .category-item__description 
+    {
+        margin-left: 10%;
+        font-style: italic;
+        margin-right:20%;
+    }
+    .header__title2
+    {
+       
+        color:#FFDF00;
+        margin-left:45%;
+        font-size:xx-large;
+        text-transform:capitalize;
+    }
+    .category-item__controls .controls__edit,
+    .category-item__controls .controls__delete,
+    .category-item__controls .controls__back 
+    {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	margin-right: .2rem;
+}
+.category-item__message{
+        margin-left:50%;
+    }
+ .fieldset{
+        text-align:center;
+        
+    }
+
+
+
