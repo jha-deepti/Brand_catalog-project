@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+<style>
+    .category-item__form .form__label {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+</style>
+
+{% block content %}
+ <body>
+     <header class="intro-header" style="background-image: url('https://en.wikipedia.org/wiki/Shopping_mall#/media/File:9.3.07GardenStatePlazaMallbyLuigiNovi.JPG'')">
+         <div class="row">
+             <div class="category-item column">
+                 <h6 class="category-item__header">
+                     <span class="header__title">Add New brands</span>
+                     <span class="header__bar"></span>
+                 </h6>
+                 <form action="#" method="post" class="category-item__form">
+                     <fieldset>
+                         <label for="" class="form__label">Name:</label>
+                         <input type="text" name="name" class="form__input">
+                         <label for="" class="form__label">Description:</label>
+                         <textarea name="description" id="" cols="30" rows="10" class="form__textarea"></textarea>
+                         <label for="" class="form__label">Category:</label>
+                         <select class="form__select" name="category">
+                             {% for category in categories %}
+                             <option value="{{category.id}}">{{category.name}}</option>
+                             {% endfor %}
+                         </select>
+                     </fieldset>
+                     <input type="submit" value="add brands">
+                     {% with messages = get_flashed_messages() %}
+                     {% if messages %}
+                     {% for message in messages %}
+                     <p class="flash__message">{{ message }}</p>
+                     {% endfor %}
+                     {% endif %}
+                     {% endwith %}
+                 </form>
+             </div>
+         </div>
+</body>
+
+{% endblock %}
